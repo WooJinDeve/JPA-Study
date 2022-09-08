@@ -31,6 +31,10 @@ dependencies {
 	//쿼리 파라미터 로그
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0'
 
+	//검증
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+
 
 	// 테스트 의존성 추가
 	testCompileOnly 'org.projectlombok:lombok'
