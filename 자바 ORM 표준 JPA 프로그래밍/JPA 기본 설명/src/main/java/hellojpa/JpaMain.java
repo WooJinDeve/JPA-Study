@@ -1,11 +1,6 @@
 package hellojpa;
 
-import hellojpa.item.Movie;
-import org.hibernate.Hibernate;
-
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.List;
 
 public class JpaMain {
 
@@ -17,20 +12,33 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Child child1 = new Child();
-            Child child2 = new Child();
+            Address address = new Address("homeCity", "street", "address");
+            MemberV5 member = new MemberV5();
+            member.setUsername("member1");
+            member.setHomeAddress(address);
 
-            Parent parent = new Parent();
-            parent.addChild(child1);
-            parent.addChild(child2);
+            member.getFavoriteFoods().add("치킨");
+            member.getFavoriteFoods().add("족발");
+            member.getFavoriteFoods().add("피자");
 
-            em.persist(parent);
+            member.getAddressHistory().add(new AddressEntity(new Address("old1", "street", "address")));
+            member.getAddressHistory().add(new AddressEntity(new Address("old2", "street", "address")));
+            em.persist(member);
 
             em.flush();
             em.clear();
 
-            Parent findParent = em.find(Parent.class, parent.getId());
-            findParent.getChildList().remove(0);
+            System.out.println("==============START===============");
+            MemberV5 findMember = em.find(MemberV5.class, member.getId());
+
+            //homecity -> newcity
+            Address newAddress = findMember.getHomeAddress();
+            findMember.setHomeAddress(new Address("newCity", newAddress.getStreet(), newAddress.getZipcode()));
+
+            //치킨 -> 한식
+            findMember.getFavoriteFoods().remove("치킨");
+            findMember.getFavoriteFoods().add("한식");
+
 
             tx.commit();
         } catch (Exception e) {
