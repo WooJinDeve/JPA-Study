@@ -11,8 +11,4 @@ public class Locker {
     private Long id;
     private String name;
 
-    //양방향
-    @OneToOne
-    @JoinColumn(name = "locker")
-    private MemberV2 member;
 }
