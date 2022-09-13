@@ -2,6 +2,13 @@
 
 - [김영한의 스프링 부트와 JPA 실무 완전 정복 로드맵](https://www.inflearn.com/roadmaps/149)를 통해 배운것들을 정리한 Repository입니다.
 
+# JPA 기본 강의 세팅
+- **JPA BASIC SETTING**
+    - `Java Version` : 8
+    - `Project` : `Maven Project`
+    - `pom.xml`
+        - `org.hibernate.hibernate-entitymanager.5.4.13.Final`, `com.h2database.h2.1.4.199`
+
 # 스프링 시작
 
 - **스프링 시작**
@@ -16,7 +23,6 @@
     - `Dependencies`
         - `Spring Web`, `Thymeleaf`, `Lombok`, `H2 DATABASE`, `Spring DATA JPA`
         - `Query Param Log` : `implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0'`
-
 
 
 - **IDE Setting**
@@ -120,5 +126,31 @@
 - 값 타입과 불변 객체
 - 값 타입 비교
 - 값 타입 컬렉션
+
+</details>
+
+<details>
+<summary><h3>객체지향 쿼리 언어 - 기본 문법</h3></summary>
+
+- [JPQL](https://github.com/WooJinDeve/JPA-Study/issues/9#issue-1371226456)
+- JPA Criteria
+- QueryDSL
+- 네이티브 SQL
+- JDBC 직접 사용
+- JPQL 문법
+- 프로젝션
+- 페이징
+- 조인
+- 서브쿼리
+- JPQL 타입 표현
+- 조건식 - CASE 식
+- JPQL 함수
+- 경로 표현식
+- 패치조인(fetch join)
+- 페치조인의 한계
+- 다형성 쿼리
+- 엔티티 직접 사용
+- Named 쿼리
+- 벌크 연산
 
 </details>
