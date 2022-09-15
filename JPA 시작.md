@@ -51,6 +51,7 @@
 
 ## JPA 구동 방식
 
+![Untitled](https://user-images.githubusercontent.com/106054507/190283218-984fa442-9eac-41ca-9965-fa57427fcfdd.png)
 
 - Persistence 에서, `yml`, `application.properties`, `persisitence.xml` 를 통해 설정 정보 조회한다.
 - `EntityManagerFactory`를 통한 생성한다.
