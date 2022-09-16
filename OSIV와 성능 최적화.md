@@ -7,7 +7,8 @@
 
 ## OSIV ON
 
-![Untitled](OSIV%E1%84%8B%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%BC%E1%84%82%E1%85%B3%E1%86%BC%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%92%E1%85%AA%206bc7a84e1cd245c2bbcf675227cfae46/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/106054507/190619044-68fd23a7-32a0-4412-b4ee-612071163bd0.png)
+
 
 - `OSIV 전략`은 트랜잭션 시작처럼 최초 데이터베이스 커넥션 시작 시점부터 `API 응답`이 끝날 때 까지 영속성 컨텍스트와 데이터베이스 커넥션을 유지한다.
 - 그래서 `View Template`이나 `API 컨트롤러`에서 지연 로딩이 가능하다.
@@ -16,7 +17,7 @@
 
 ## **OSIV OFF**
 
-![Untitled](OSIV%E1%84%8B%E1%85%AA%20%E1%84%89%E1%85%A5%E1%86%BC%E1%84%82%E1%85%B3%E1%86%BC%20%E1%84%8E%E1%85%AC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%92%E1%85%AA%206bc7a84e1cd245c2bbcf675227cfae46/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/106054507/190618993-4b88a477-50c0-4296-897d-5cbd62ac8747.png)
 
 - `OSIV`를 끄면 트랜잭션을 종료할 때 영속성 컨텍스트를 닫고, 데이터베이스 커넥션도 반환한다. 따라서 커넥션 리소스를 낭비하지 않는다.
 - `OSIV`를 끄면 모든 지연로딩을 트랜잭션 안에서 처리해야 한다. 따라서 지금까지 작성한 많은 지연 로딩 코드를 트랜잭션 안으로 넣어야 하는 단점이 있다.
