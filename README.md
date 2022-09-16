@@ -1,6 +1,7 @@
 ﻿# 개요
 
 - [김영한의 스프링 부트와 JPA 실무 완전 정복 로드맵](https://www.inflearn.com/roadmaps/149)를 통해 배운것들을 정리한 Repository입니다.
+-  강의 프로젝트 파일에는 강의를 위한 **기본코드만 제공**됩니다.
 
 # JPA 기본 강의 세팅
 - **JPA BASIC SETTING**
@@ -152,5 +153,15 @@
 - 엔티티 직접 사용
 - Named 쿼리
 - 벌크 연산
+
+</details>
+
+<details>
+<summary><h3>OSIV와 성능 최적화</h3></summary>
+
+- [OSIV?](https://github.com/WooJinDeve/JPA-Study/issues/10#issue-1375753568)
+- OSIV ON
+- OSIV OFF
+- 커멘드와 쿼리 분리
 
 </details>
