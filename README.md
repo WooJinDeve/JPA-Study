@@ -165,3 +165,15 @@
 - 커멘드와 쿼리 분리
 
 </details>
+
+<details>
+<summary><h3>스프링 데이터 JPA</h3></summary>
+
+- [공통 인터페이스 설정](https://github.com/WooJinDeve/JPA-Study/issues/11#issue-1377027588)
+- 쿼리 메소드 기능
+- 확장 기능
+- 스프링 데이터 JPA 분석
+- 나머지 기능
+
+</details>
+
