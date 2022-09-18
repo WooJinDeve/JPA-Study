@@ -2,7 +2,8 @@
 
 ## 공통 인터페이스 설정
 
-![Untitled](%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20JPA%20e5bcbe54353a42259fc3e74a4ea4b999/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/106054507/190900052-7dbf8ba1-7c61-4f13-9a66-408edb5b6775.png)
+
 
 - `org.springframework.data.repository.Repository` 를 구현한 클래스는 스캔 대상
     - `memberRepository.getClass() class com.sun.proxy.$ProxyXXX`
@@ -10,7 +11,8 @@
     - 컴포넌트 스캔을 스프링 데이터 JPA가 자동으로 처리
     - `JPA` 예외를 스프링 예외로 변환하는 과정도 자동으로 처리
 
-![Untitled](%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20JPA%20e5bcbe54353a42259fc3e74a4ea4b999/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/106054507/190900057-50de4a60-92ad-4e15-b118-cc8ef96fd184.png)
+
 
 - **주요 메서드**
     - **save(S)** : 새로운 엔티티는 저장하고 이미 있는 엔티티는 병합한다.
