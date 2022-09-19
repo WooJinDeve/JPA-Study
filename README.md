@@ -177,3 +177,10 @@
 
 </details>
 
+<details>
+<summary><h3>QueryDsl 설정</h3></summary>
+
+- [기본문법](https://github.com/WooJinDeve/JPA-Study/issues/12#issue-1377786481)
+- 중급 문법
+</details>
+
